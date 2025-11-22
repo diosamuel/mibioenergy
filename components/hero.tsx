@@ -1,10 +1,34 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import hero from "@/assets/header.png"
+import { useEffect, useState } from "react"
+
 export function Hero() {
+  const [scrollProgress, setScrollProgress] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY
+      const maxScroll = 300 // Maximum scroll distance to track
+      const progress = Math.min(scrollPosition / maxScroll, 1)
+      setScrollProgress(progress)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Calculate width: starts at 90% (with container padding), expands to 100%
+  const widthPercentage = 90 + scrollProgress * 10
+
   return (
-    <section className="container mx-auto mt-6 px-4">
-      <div className="relative h-[500px] w-full overflow-hidden rounded-3xl md:h-[600px]">
+    <section className="container mx-auto mt-6">
+      <div 
+        className="relative h-[500px] overflow-hidden rounded-3xl md:h-[600px] transition-all duration-300 ease-out mx-auto"
+        style={{ width: `${widthPercentage}%` }}
+      >
         {/* Background Image */}
         <Image
           src={hero.src}
@@ -15,7 +39,7 @@ export function Hero() {
         />
 
         {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-green/40 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-br from-green-300/40 to-blue-500/30" />
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">
@@ -24,7 +48,7 @@ export function Hero() {
               <h1 className="text-xl font-bold leading-tight md:text-3xl lg:text-4xl">
                 Bioethanol & Bricket for sustainable energy
               </h1>
-              <p className="text-lg text-slate-100/90 md:text-xl">
+              <p className="text-sm text-slate-100/90 md:text-sm">
                 MibiTech is committed to providing sustainable energy solutions for a brighter future. We strive to
                 reduce carbon emissions and promote renewable resources through innovative technologies and responsible
                 practices.

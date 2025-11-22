@@ -7,22 +7,22 @@ export function ArticlesSection() {
     {
       title: "Reduced number of farmers below poverty line by 13% from 54% in 2022 to 35% in 2023",
       category: "Elevate Socio-Economic Welfare and Well-Being",
-      image: "/farmer-in-rice-field-harvest.jpg",
+      image: "https://placehold.co/400",
     },
     {
       title: "7 out of 10 farmers already received advisory on Good Agriculture Practice",
       category: "Elevate Literacy",
-      image: "/farmer-wearing-hat-planting.jpg",
+      image: "https://placehold.co/400",
     },
     {
       title: "Increased women farmers threefold with its rate grew 30% from 9% to 11.7%",
       category: "Elevate Inclusivity",
-      image: "/women-farmers-smiling-field.jpg",
+      image: "https://placehold.co/400",
     },
     {
       title: "Reduced CO2 emissions by 43% compared to last year, from 467.52 tCO2e in 2022",
       category: "Elevate Sustainable Environment",
-      image: "/green-agriculture-landscape-farm.jpg",
+      image: "https://placehold.co/400",
     },
   ]
 

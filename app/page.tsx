@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-teal-100 selection:text-teal-900">
       <TopNav />
-      <main className="space-y-20 pb-20">
+      <main className="pt-28 space-y-20 pb-20">
         <Hero />
         <IntroSection />
         {/* Grouping dark sections together */}

@@ -17,7 +17,7 @@ export function TeamSection() {
         {[1, 2, 3, 4].map((item) => (
           <div key={item} className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-slate-100">
             <Image
-              src={`/industrial-refinery-factory-exterior-.jpg`}
+              src={`https://placehold.co/400`}
               alt="Team member background"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

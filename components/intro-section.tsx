@@ -24,7 +24,7 @@ export function IntroSection() {
           {/* Main Image Container with Shape Mask */}
           <div className="relative overflow-hidden rounded-[2rem] rounded-tr-[8rem] rounded-bl-[4rem] bg-emerald-50">
             <Image
-              src="/scientist-in-lab-coat-looking-at-test-tube-researc.jpg"
+              src="https://placehold.co/400"
               alt="Scientist working in lab"
               width={600}
               height={600}

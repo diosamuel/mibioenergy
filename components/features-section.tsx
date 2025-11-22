@@ -42,7 +42,7 @@ export function FeaturesSection() {
         {/* Right Side: Image */}
         <div className="relative h-[400px] overflow-hidden rounded-2xl bg-white/10 lg:h-auto">
           <Image
-            src="/scientist-using-microscope-laboratory.jpg"
+            src="https://placehold.co/400"
             alt="Scientist using microscope"
             fill
             className="object-cover"

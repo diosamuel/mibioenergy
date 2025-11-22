@@ -8,8 +8,7 @@ export function TeamSection() {
       <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">Meet Our Team</h2>
         <p className="max-w-lg text-right text-sm text-slate-500 md:text-base">
-          Chandra Asri Group berdedikasi untuk mencapai pertumbuhan berkelanjutan melalui berbagai inisiatif
-          transformasional, produk-produk esensial, dan solusi infrastruktur penting.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
         </p>
       </div>
 

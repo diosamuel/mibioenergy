@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           {/* Brand & Address */}
-          <div className="max-w-sm space-y-6">
+          <div className="max-w-sm space-y-6" data-aos="fade-up">
             <div className="flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100">
                 <svg
@@ -48,7 +48,11 @@ export function Footer() {
           {/* Links could go here if design had them, mostly it's clean */}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 text-xs text-blue-100/60 md:flex-row">
+        <div 
+          className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 text-xs text-blue-100/60 md:flex-row"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <p>© 2025 MiBio Energy Tech.</p>
 
           <div className="flex gap-4">

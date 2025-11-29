@@ -7,7 +7,7 @@ export function FeaturesSection() {
         {/* Left Side: Text & Tabs */}
         <div className="space-y-8">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold text-white md:text-4xl">Alat MiBi Tech</h2>
+            <h2 className="text-3xl font-bold text-white md:text-4xl">We Know</h2>
             <p className="text-blue-100/80">
               MibiTech is committed to providing sustainable energy solutions for a brighter future. We strive to reduce
               carbon emissions and promote renewable resources through innovative technologies.
@@ -18,7 +18,7 @@ export function FeaturesSection() {
           <div className="space-y-4">
             {/* Active Item */}
             <div className="border-l-4 border-emerald-400 bg-white/5 pl-6 py-4">
-              <h3 className="text-lg font-semibold text-white">Fitur 1</h3>
+              <h3 className="text-lg font-semibold text-white">Sustainable Energy</h3>
               <p className="mt-2 text-sm text-blue-100/70">
                 MibiTech is committed to providing sustainable energy solutions for a brighter future. We strive to
                 reduce carbon emissions and promote renewable resources through innovative technologies and responsible

@@ -14,7 +14,7 @@ export function TeamSection() {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {[1, 2, 3, 4].map((item) => (
-          <div key={item} className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-slate-100">
+          <div key={item} className="group relative aspect-4/5 overflow-hidden rounded-2xl bg-slate-100">
             <Image
               src={`https://placehold.co/400`}
               alt="Team member background"

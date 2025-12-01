@@ -11,11 +11,11 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-teal-100 selection:text-teal-900">
       <TopNav />
-      <main className="pt-28 space-y-20 pb-20">
+      <main className="pt-20 md:pt-24 lg:pt-28 space-y-12 md:space-y-16 lg:space-y-20 pb-12 md:pb-16 lg:pb-20">
         <Hero />
         <IntroSection />
         {/* Grouping dark sections together */}
-        <div className="bg-[#0F3D6E] text-white rounded-3xl mx-4 md:mx-8 overflow-hidden">
+        <div className="bg-[#0F3D6E] text-white rounded-2xl md:rounded-3xl mx-2 md:mx-4 lg:mx-8 overflow-hidden">
           <FeaturesSection />
           <ArticlesSection />
         </div>

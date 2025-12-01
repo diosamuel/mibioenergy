@@ -24,9 +24,9 @@ export function Hero() {
   const widthPercentage = 90 + scrollProgress * 10
 
   return (
-    <section className="container mx-auto mt-6" data-aos="fade-up">
+    <section className="container mx-auto mt-4 px-2 md:mt-6 md:px-4" data-aos="fade-up">
       <div 
-        className="relative h-[500px] overflow-hidden rounded-3xl md:h-[600px] transition-all duration-300 ease-out mx-auto"
+        className="relative h-[400px] overflow-hidden rounded-2xl md:h-[500px] lg:h-[600px] md:rounded-3xl transition-all duration-300 ease-out mx-auto"
         style={{ width: `${widthPercentage}%` }}
       >
         {/* Background Image */}
@@ -43,26 +43,24 @@ export function Hero() {
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">
-          <div className="px-8 md:px-16 lg:px-20">
-            <div className="max-w-xl space-y-6 text-white">
+          <div className="px-4 md:px-12 lg:px-20">
+            <div className="max-w-xl space-y-3 md:space-y-6 text-white">
               <h1 
-                className="text-xl font-bold leading-tight md:text-3xl lg:text-4xl"
+                className="text-lg font-bold leading-tight md:text-2xl lg:text-4xl"
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
-                Bioethanol & Bricket for sustainable energy
+                Mengolah Sampah Organik Menjadi Energi Terbarukan
               </h1>
               <p 
-                className="text-sm text-slate-100/90 md:text-sm"
+                className="text-xs md:text-sm text-slate-100/90 leading-relaxed"
                 data-aos="fade-right"
                 data-aos-delay="400"
               >
-                MibiTech is committed to providing sustainable energy solutions for a brighter future. We strive to
-                reduce carbon emissions and promote renewable resources through innovative technologies and responsible
-                practices.
+                MiBi-Tech adalah inovasi yang berfokus pada pemanfaatan sampah organik menjadi energi terbarukan dan produk bernilai guna. Sistem terintegrasi yang mengolah limbah pasar menjadi bioetanol dan biobriket tanpa meninggalkan limbah akhir yang signifikan.
               </p>
               <div data-aos="fade-up" data-aos-delay="600">
-                <Button size="lg" className="h-12 rounded-full bg-blue-600 px-8 text-base hover:bg-blue-700 text-white">
+                <Button size="lg" className="h-10 md:h-12 rounded-full bg-blue-600 px-6 md:px-8 text-sm md:text-base hover:bg-blue-700 text-white">
                   Explore Mibi Tech
                 </Button>
               </div>

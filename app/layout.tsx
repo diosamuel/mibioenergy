@@ -20,15 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:ital,wght@0,300..900;1,300..900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
         className={`${geistMono.variable} antialiased`}
-        style={{ fontFamily: "'Stack Sans Text', sans-serif" }}
       >
         <AOSProvider>{children}</AOSProvider>
       </body>

@@ -1,8 +1,6 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import hero from "@/assets/header.png"
 import { useEffect, useState } from "react"
 
 export function Hero() {
@@ -29,14 +27,17 @@ export function Hero() {
         className="relative h-[400px] overflow-hidden rounded-2xl md:h-[500px] lg:h-[600px] md:rounded-3xl transition-all duration-300 ease-out mx-auto"
         style={{ width: `${widthPercentage}%` }}
       >
-        {/* Background Image */}
-        <Image
-          src={hero.src}
-          alt="Wind turbines in a green field"
-          fill
-          className="object-cover"
-          priority
-        />
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        >
+          <source src="/assets/header.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         {/* Overlay Gradient */}
         <div className="absolute inset-0 bg-linear-to-br from-green-300/40 to-blue-500/30" />

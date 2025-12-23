@@ -6,7 +6,7 @@ export function TopNav() {
     <header className="fixed top-0 left-0 right-0 z-50 w-full">
       {/* Top Bar */}
       <div className="w-full bg-linear-to-r from-red-400 to-black py-2 text-center text-sm font-medium text-white">
-        Top 7 Pertamuda Startup by Pertamina
+        Top 7 Pertamuda Startup by Pertamina [WEBSITE STILL DEVELOPMENT]
       </div>
 
       {/* Navbar */}

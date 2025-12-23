@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { AOSProvider } from "@/components/aos-provider";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} antialiased`}
+        className={`${plusJakartaSans.variable} font-sans antialiased`}
       >
         <AOSProvider>{children}</AOSProvider>
       </body>

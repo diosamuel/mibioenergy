@@ -38,9 +38,9 @@ export function ArticlesSection() {
       >
         <div className="space-y-2">
           <span className="text-xs md:text-sm font-medium text-emerald-400 uppercase tracking-wide">
-            Mekanisme Kerja
+            Artikel Mibi Tech
           </span>
-          <h2 className="text-2xl md:text-3xl font-bold text-white lg:text-4xl">Cara Kerja MiBi-Tech</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white lg:text-4xl">Artikel Mibi Tech</h2>
           <p className="max-w-2xl text-sm md:text-base text-blue-100/80">
             Sistem terintegrasi yang mengolah sampah organik menjadi energi terbarukan melalui proses pemisahan, fermentasi, pembakaran, dan waste-to-product sehingga setiap bagian sampah dapat dimanfaatkan secara maksimal.
           </p>

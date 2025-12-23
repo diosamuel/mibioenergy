@@ -32,7 +32,6 @@ export function IntroSection() {
               </ul>
             </div>
           </div>
-          <Button className="h-10 md:h-12 rounded-full bg-blue-600 px-6 md:px-8 text-sm md:text-base hover:bg-blue-700 text-white">Contact Us</Button>
         </div>
 
         {/* Image Side */}

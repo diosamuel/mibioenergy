@@ -40,7 +40,7 @@ export function Hero() {
         </video>
 
         {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-linear-to-br from-green-300/40 to-blue-500/30" />
+        <div className="absolute inset-0 bg-linear-to-br from-blue-900/90 to-green-500/30" />
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">
@@ -54,15 +54,15 @@ export function Hero() {
                 Mengolah Sampah Organik Menjadi Energi Terbarukan
               </h1>
               <p 
-                className="text-xs md:text-sm text-slate-100/90 leading-relaxed"
+                className="text-xs md:text-sm text-white leading-relaxed"
                 data-aos="fade-right"
                 data-aos-delay="400"
               >
                 MiBi-Tech adalah inovasi yang berfokus pada pemanfaatan sampah organik menjadi energi terbarukan dan produk bernilai guna. Sistem terintegrasi yang mengolah limbah pasar menjadi bioetanol dan biobriket tanpa meninggalkan limbah akhir yang signifikan.
               </p>
               <div data-aos="fade-up" data-aos-delay="600">
-                <Button size="lg" className="h-10 md:h-12 rounded-full bg-blue-600 px-6 md:px-8 text-sm md:text-base hover:bg-blue-700 text-white">
-                  Explore Mibi Tech
+                <Button size="lg" className="h-10 md:h-12 rounded-full px-6 md:px-8 text-sm md:text-base text-white">
+                  Kenal Lebih Lanjut
                 </Button>
               </div>
             </div>

@@ -36,7 +36,7 @@ export function ArticlesSection() {
   ]
 
   return (
-    <section className="px-4 pb-12 md:px-8 md:pb-16 lg:px-16 xl:px-20">
+    <section className="px-4 pb-12 md:px-8 md:pb-16 lg:px-16 xl:px-20" id="kerjasama">
       <div 
         className="mb-8 md:mb-10 flex flex-col items-start justify-between gap-4 md:gap-6 md:flex-row md:items-end"
         data-aos="fade-up"

@@ -60,9 +60,12 @@ export function Hero() {
               >
                 Sistem terintegrasi yang mengolah limbah pasar menjadi bioetanol dan biobriket tanpa meninggalkan limbah akhir yang signifikan.
               </p>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <Button size="lg" className="h-10 md:h-12 rounded-full px-6 md:px-8 text-sm md:text-sm text-white">
+              <div data-aos="fade-up" data-aos-delay="600" className="flex items-center gap-2">
+                <Button size="lg" className="bg-green-mibi hover:bg-green-mibi/90 h-10 md:h-12 rounded-full px-6 md:px-8 text-sm md:text-sm text-black-mibi">
                   Kenal Lebih Lanjut
+                </Button>
+                <Button size="lg" className="bg-transparent border-2 border-green-mibi hover:bg-green-mibi/10 h-10 md:h-12 rounded-full px-6 md:px-8 text-sm md:text-sm text-white">
+                  Kontak Kami
                 </Button>
               </div>
             </div>

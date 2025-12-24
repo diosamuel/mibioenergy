@@ -14,7 +14,7 @@ export function TopNav() {
       {/* Top Bar */}
       <div className="w-full bg-linear-to-r from-blue-mibi to-green-mibi py-2 text-center text-sm font-medium text-white">
         <a href="#kerjasama" className=" flex items-center justify-center gap-2">
-        <p className="font-bold text-md">Top 12 Pertamuda Seed and Scale 2025 by PT Pertamina</p>
+        <p className="font-bold text-sm">Top 12 Pertamuda Seed and Scale 2025 by PT Pertamina</p>
         <span className="flex items-center gap-1">
           <ArrowRight className="h-4 w-4" />
         </span>

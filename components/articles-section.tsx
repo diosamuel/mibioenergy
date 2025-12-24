@@ -1,32 +1,37 @@
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, ArrowRight } from "lucide-react"
+import { ArrowLeft, ArrowRight, Link } from "lucide-react"
 import Image from "next/image"
 import alatImage from "@/assets/alat.jpg"
 import rancangImage from "@/assets/rancang.jpg"
 import labImage1 from "@/assets/IMG_20240626_181331.jpg"
 import labImage2 from "@/assets/IMG_20240717_173102.jpg"
-
+import prestasiImage from "@/assets/prestasi/pertamuda-1761874282045_169.jpeg"
+import ceritamedan from "@/assets/prestasi/ceritamedan.jpeg"
 export function ArticlesSection() {
   const articles = [
     {
-      title: "Sampah organik dengan kadar gula dan air yang tinggi dimasukkan ke dalam spinner untuk dipisahkan antara air lindi dengan padatannya",
-      category: "Pemisahan",
-      image: alatImage,
+      title: "TOP! 12 Startup Jebolan Pertamuda Langsung Teken MoU dengan Investor",
+      category: "CNBC Indonesia",
+      image: prestasiImage,
+      url: "https://www.cnbcindonesia.com/entrepreneur/20251031082400-25-680937/top-12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor"
     },
     {
-      title: "Air lindi diolah menjadi bioetanol melalui proses fermentasi dan destilasi yang menghasilkan energi terbarukan",
-      category: "Fermentasi & Destilasi",
-      image: rancangImage,
+      title: "Febiola Silitonga Mahasiswa ITERA Medan Bawa Inovasi Olah Sampah Jadi Energi Terbarukan di Top 40 Pertamuda 2025",
+      category: "Cerita Medan",
+      image: ceritamedan,
+      url: "https://www.ceritamedan.com/febiola-silitonga-mahasiswa-itera-medan-bawa-inovasi-olah-sampah-jadi-energi-terbarukan-di-top-40-pertamuda-2025"
     },
     {
-      title: "Sampah padat dibakar dengan sedikit oksigen dan ditambahkan perekat untuk dijadikan briket",
-      category: "Pembakaran & Pembriketan",
-      image: labImage1,
+      title: "12 Startup Jebolan Pertamuda Langsung Teken MoU Dengan Investor",
+      category: "Tempo",
+      image: prestasiImage,
+      url:"https://www.tempo.co/info-tempo/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-2085019"
     },
     {
-      title: "Sistem ini dilengkapi dengan PLTS yang terhubung ke spinner untuk input tegangan awal operasional mandiri",
-      category: "PLTS Integration",
-      image: labImage2,
+      title: "12 Startup Jebolan Pertamuda Langsung Teken MoU dengan Investor di Panggung ",
+      category: "ESPOS",
+      image: prestasiImage,
+      url:"https://bisnis.espos.id/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-di-panggung-2157163"
     },
   ]
 
@@ -37,26 +42,20 @@ export function ArticlesSection() {
         data-aos="fade-up"
       >
         <div className="space-y-2">
-          <span className="text-xs md:text-sm font-medium text-emerald-400 uppercase tracking-wide">
+          <span className="text-xs md:text-sm font-medium text-blue-mibi uppercase tracking-wide">
             Artikel Mibi Tech
           </span>
-          <h2 className="text-2xl md:text-3xl font-bold text-white lg:text-4xl">Artikel Mibi Tech</h2>
-          <p className="max-w-2xl text-sm md:text-base text-blue-100/80">
+          <h2 className="text-2xl md:text-3xl font-bold text-black-mibi lg:text-4xl">Lihat Prestasi Kami</h2>
+          <p className="max-w-2xl text-sm md:text-base text-black-mibi/60">
             Sistem terintegrasi yang mengolah sampah organik menjadi energi terbarukan melalui proses pemisahan, fermentasi, pembakaran, dan waste-to-product sehingga setiap bagian sampah dapat dimanfaatkan secara maksimal.
           </p>
         </div>
-        <Button 
-          className="rounded-full bg-white px-6 md:px-8 text-sm md:text-base text-slate-900 hover:bg-slate-100 whitespace-nowrap"
-          data-aos="fade-left"
-        >
-          Contact Us
-        </Button>
       </div>
 
       <div className="grid gap-3 md:gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {articles.map((article, i) => (
+          <a href={article.url} target="_blank" key={i}>
           <div 
-            key={i} 
             className="group relative h-[280px] md:h-[320px] overflow-hidden rounded-xl md:rounded-2xl bg-slate-800"
             data-aos="fade-up"
             data-aos-delay={i * 100}
@@ -75,6 +74,7 @@ export function ArticlesSection() {
               </span>
             </div>
           </div>
+          </a>
         ))}
       </div>
 

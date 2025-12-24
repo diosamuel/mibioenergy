@@ -22,10 +22,10 @@ export function Hero() {
   const widthPercentage = 90 + scrollProgress * 10
 
   return (
-    <section className="container mx-auto mt-4 px-2 md:mt-6 md:px-4" data-aos="fade-up">
+    <section className="" data-aos="fade-up">
       <div 
-        className="relative h-[400px] overflow-hidden rounded-2xl md:h-[500px] lg:h-[600px] md:rounded-3xl transition-all duration-300 ease-out mx-auto"
-        style={{ width: `${widthPercentage}%` }}
+        className="relative h-[700px] overflow-hidden rounded-2xl md:h-[500px] lg:h-[600px] md:rounded-3xl transition-all duration-300 ease-out mx-auto"
+        // style={{ width: `${widthPercentage}%` }}
       >
         {/* Background Video */}
         <video
@@ -47,7 +47,7 @@ export function Hero() {
           <div className="px-4 md:px-12 lg:px-20">
             <div className="max-w-xl space-y-3 md:space-y-6 text-white">
               <h1 
-                className="text-lg font-bold leading-tight md:text-2xl lg:text-4xl"
+                className="text-2xl font-bold leading-tight md:text-4xl lg:text-4xl"
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
@@ -58,10 +58,10 @@ export function Hero() {
                 data-aos="fade-right"
                 data-aos-delay="400"
               >
-                MiBi-Tech adalah inovasi yang berfokus pada pemanfaatan sampah organik menjadi energi terbarukan dan produk bernilai guna. Sistem terintegrasi yang mengolah limbah pasar menjadi bioetanol dan biobriket tanpa meninggalkan limbah akhir yang signifikan.
+                Sistem terintegrasi yang mengolah limbah pasar menjadi bioetanol dan biobriket tanpa meninggalkan limbah akhir yang signifikan.
               </p>
               <div data-aos="fade-up" data-aos-delay="600">
-                <Button size="lg" className="h-10 md:h-12 rounded-full px-6 md:px-8 text-sm md:text-base text-white">
+                <Button size="lg" className="h-10 md:h-12 rounded-full px-6 md:px-8 text-sm md:text-sm text-white">
                   Kenal Lebih Lanjut
                 </Button>
               </div>

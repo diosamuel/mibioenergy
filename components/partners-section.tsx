@@ -1,17 +1,14 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import logoImage from "@/assets/logo.png"
-
+import pertaminaImage from "@/assets/pertamina.png"
+import pertamudaImage from "@/assets/pertamuda.png"
+import pkmImage from "@/assets/pkm.png"
 export function PartnersSection() {
   const partners = [
-    { name: "Partner 1", logo: logoImage },
-    { name: "Partner 2", logo: logoImage },
-    { name: "Partner 3", logo: logoImage },
-    { name: "Partner 4", logo: logoImage },
-    { name: "Partner 5", logo: logoImage },
-    { name: "Partner 6", logo: logoImage },
-    { name: "Partner 7", logo: logoImage },
-    { name: "Partner 8", logo: logoImage },
+    { name: "Pertamina", logo: pertaminaImage },
+    { name: "Pertamuda", logo: pertamudaImage },
+    { name: "PKM", logo: pkmImage },
   ]
 
   return (
@@ -23,7 +20,7 @@ export function PartnersSection() {
           <p className="text-sm md:text-base text-slate-600">
             Kami telah di dukung oleh institusi dan perusahaan untuk meningkatkan ekosistem bersama
           </p>
-          <Button className="h-10 md:h-12 rounded-full bg-blue-600 px-6 md:px-8 text-sm md:text-base hover:bg-blue-700 text-white">Contact Us</Button>
+          {/* <Button className="h-10 md:h-12 rounded-full bg-blue-600 px-6 md:px-8 text-sm md:text-base hover:bg-blue-700 text-white">Contact Us</Button> */}
         </div>
 
         {/* Right Side - Grid */}
@@ -39,7 +36,7 @@ export function PartnersSection() {
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  width={120}
+                  width={200}
                   height={60}
                   className="h-8 md:h-12 w-auto object-contain opacity-80 hover:opacity-100"
                 />

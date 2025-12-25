@@ -3,28 +3,13 @@ import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-[#003366] text-white">
+    <footer className="bg-blue-950 text-white">
       <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
         <div className="flex flex-col gap-6 md:gap-8 md:flex-row md:justify-between">
           {/* Brand & Address */}
           <div className="max-w-sm space-y-4 md:space-y-6" data-aos="fade-up">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-lg bg-emerald-100">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  className="h-5 w-5 md:h-6 md:w-6 text-emerald-600"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M12 3c-4 0-7 3-7 8 0 4 3 8 8 8s8-4 8-8c0-5-3-8-7-8" className="opacity-0" />
-                  <path d="M7 17v-6a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v4" />
-                  <path d="M17 17v-6a3 3 0 0 0-3-3h0a3 3 0 0 0-3 3v4" />
-                </svg>
-              </div>
-              <span className="text-lg md:text-xl font-bold">MiBio Energy Tech</span>
+              <span className="text-lg md:text-xl font-bold">Mibi-Tech</span>
             </div>
 
             <div className="space-y-3 md:space-y-4 text-xs md:text-sm text-blue-100/80">

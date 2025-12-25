@@ -6,7 +6,6 @@ interface TimelineItem {
   id: number
   title: string
   description: string
-  timestamp: string
   videoTime: number // seconds in video
 }
 
@@ -14,43 +13,37 @@ const timelineItems: TimelineItem[] = [
   {
     id: 1,
     title: "Pengumpulan Sampah Organik",
-    description: "Sampah organik dengan kadar gula dan air yang tinggi dikumpulkan dari pasar dan sumber lainnya untuk diproses lebih lanjut.",
-    timestamp: "00:00",
+    description: "",
     videoTime: 0
   },
   {
     id: 2,
     title: "Proses Spinner",
-    description: "Sampah dimasukkan ke dalam spinner untuk memisahkan air lindi dari padatannya dengan teknologi sentrifugal.",
-    timestamp: "00:03",
+    description: "",
     videoTime: 3
   },
   {
     id: 3,
     title: "Pembakaran Pirolisis",
-    description: "Sampah padat kemudian dibakar dengan sedikit oksigen dalam proses pirolisis untuk menghasilkan arang.",
-    timestamp: "00:06",
+    description: "",
     videoTime: 6
   },
   {
     id: 4,
     title: "Pembuatan Biobriket",
-    description: "Arang hasil pembakaran dicampur dengan perekat organik dan dicetak menjadi biobriket yang siap digunakan.",
-    timestamp: "00:09",
+    description: "",
     videoTime: 9
   },
   {
     id: 5,
     title: "Fermentasi Air Lindi",
-    description: "Air lindi yang kaya gula difermentasi menggunakan ragi untuk menghasilkan alkohol.",
-    timestamp: "00:12",
+    description: "",
     videoTime: 12
   },
   {
     id: 6,
     title: "Destilasi Bioetanol",
-    description: "Hasil fermentasi didestilasi untuk memurnikan bioetanol hingga kadar yang optimal untuk bahan bakar.",
-    timestamp: "00:15",
+    description: "",
     videoTime: 30
   }
 ]

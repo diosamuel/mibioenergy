@@ -125,3 +125,19 @@ html {
     @apply bg-background text-foreground font-sans;
   }
 }
+
+/* Scribble underline animation */
+@keyframes scribble-draw {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-scribble {
+  animation: scribble-draw 5s ease-out forwards;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}

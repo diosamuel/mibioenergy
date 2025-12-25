@@ -1,6 +1,7 @@
 "use client"
 
 import { Zap, LeafIcon, Play, X } from "lucide-react"
+import Image from "next/image"
 import { useState } from "react"
 
 export function IntroSection() {
@@ -13,7 +14,6 @@ export function IntroSection() {
         <div className="space-y-4 md:space-y-6" data-aos="fade-right">
           <span className="text-xs md:text-sm font-semibold tracking-wider text-slate-500 uppercase">Tentang Kami</span>
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 lg:text-4xl flex items-center gap-3">
-            <LeafIcon className="h-7 w-7 md:h-9 md:w-9 lg:h-10 lg:w-10 text-green-mibi fill-green-mibi" />
             Kenalan Yuk!
           </h2>
           <p className="text-xs md:text-base lg:text-lg leading-relaxed text-slate-600">
@@ -43,7 +43,9 @@ export function IntroSection() {
         {/* Image Side */}
         <div className="relative mx-auto w-full max-w-sm md:max-w-none" data-aos="fade-left" data-aos-delay="200">
           {/* Abstract Green Shape Background */}
-          {/* <div className="absolute -right-6 -top-6 md:-right-12 md:-top-12 h-full w-full rounded-[3rem] bg-emerald-400/20 blur-3xl" /> */}
+          <div className="absolute -right-[10em] -top-[8em]">
+            <Image src="/assets/logo_hd.png" alt="Abstract Green Shape" width={550} height={100} />
+          </div>
 
           {/* Main Image Container with Shape Mask */}
           <div 
@@ -55,7 +57,7 @@ export function IntroSection() {
               loop
               muted
               playsInline
-              className="object-cover w-full h-full absolute inset-0 transition-transform duration-300 group-hover:scale-105"
+              className="object-cover w-full h-full absolute inset-0 transition-transform duration-300 group-hover:scale-105 shadow-sm"
             >
               <source src="/assets/video.mp4" type="video/mp4" />
               Your browser does not support the video tag.

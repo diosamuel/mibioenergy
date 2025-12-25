@@ -4,13 +4,25 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Icon, Instagram, Menu, X } from "lucide-react"
 import logo from "@/assets/logo.png"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export function TopNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    handleScroll() // Check initial scroll position
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
-    <header className="fixed w-full z-50">
+    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? '' : ''}`}>
       {/* Top Bar */}
       <div className="w-full bg-linear-to-r from-blue-mibi to-green-mibi py-2 text-center text-sm font-medium text-white">
         <a href="#kerjasama" className=" flex items-center justify-center gap-2">
@@ -23,40 +35,56 @@ export function TopNav() {
 
       {/* Navbar */}
       <div className="container mx-auto mt-[5px] px-4">
-        <nav className="flex items-center justify-between rounded-full bg-white border px-6 py-3 shadow-lg ring-1 ring-[#d9d9d9]">
+        <nav className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-300 ${
+          isScrolled 
+            ? 'bg-white border shadow-lg ring-1 ring-[#d9d9d9]' 
+            : 'bg-transparent shadow-none'
+        }`}>
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg">
               <img src={logo.src} alt="MibiTech" className="w-10" />
             </div>
-            <span className="font-bold text-slate-900 hidden sm:inline-block">Mibi-Tech</span>
+            <span className={`font-bold hidden sm:inline-block transition-colors duration-300 ${
+              isScrolled ? 'text-slate-900' : 'text-white'
+            }`}>Mibi-Tech</span>
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden items-center gap-8 md:flex text-sm font-medium text-slate-600">
-            <Link href="#" className="text-slate-900 hover:text-blue-mibi">
+          <div className={`hidden items-center gap-8 md:flex text-sm font-medium transition-colors duration-300 ${
+            isScrolled ? 'text-slate-600' : 'text-white/80'
+          }`}>
+            <Link href="#" className={`hover:text-blue-mibi transition-colors ${
+              isScrolled ? 'text-slate-900' : 'text-white'
+            }`}>
               Beranda
             </Link>
-            <Link href="#" className="hover:text-blue-mibi">
+            <Link href="#" className="hover:text-blue-mibi transition-colors">
               Tentang Mibi
             </Link>
-            <Link href="#" className="hover:text-blue-mibi">
+            <Link href="#" className="hover:text-blue-mibi transition-colors">
               Kerja Sama
             </Link>
-            <Link href="#" className="hover:text-blue-mibi">
+            <Link href="#" className="hover:text-blue-mibi transition-colors">
               Artikel
             </Link>
           </div>
 
           {/* Desktop CTA */}
-          <Button className="hidden md:flex rounded-full bg-blue-mibi px-6 text-white hover:bg-blue-mibi/90">
+          <Button className={`hidden md:flex rounded-full px-6 transition-all duration-300 ${
+            isScrolled 
+              ? 'bg-blue-mibi text-white hover:bg-blue-mibi/90' 
+              : 'bg-white text-blue-mibi hover:bg-white/90'
+          }`}>
             Hubungi Kami
           </Button>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-slate-900 hover:text-blue-mibi transition-colors"
+            className={`md:hidden p-2 transition-colors ${
+              isScrolled ? 'text-slate-900 hover:text-blue-mibi' : 'text-white hover:text-white/80'
+            }`}
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

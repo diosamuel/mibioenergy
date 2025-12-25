@@ -73,7 +73,27 @@ export function TeamSection() {
         className="mb-8 md:mb-12 flex flex-col gap-4 md:gap-6 md:flex-row md:items-end md:justify-between"
         data-aos="fade-up"
       >
-        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 lg:text-4xl">Dibalik MiBi-Tech</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 lg:text-4xl relative inline-block">
+          Dibalik MiBi-Tech
+          <svg
+            className="absolute -bottom-2 md:-bottom-3 left-0 w-1/2 h-3 md:h-4"
+            viewBox="0 0 200 12"
+            fill="none"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M2 8.5C20 3.5 40 10.5 60 6.5C80 2.5 100 9.5 120 5.5C140 1.5 160 8.5 180 4.5C190 2.5 198 6.5 198 6.5"
+              stroke="#10b981"
+              strokeWidth="3"
+              strokeLinecap="round"
+              className="animate-scribble"
+              style={{
+                strokeDasharray: 300,
+                strokeDashoffset: 300,
+              }}
+            />
+          </svg>
+        </h2>
         <p className="max-w-lg text-left md:text-right text-xs md:text-sm text-slate-500 lg:text-base">
           Tim kami terdiri dari individu-individu berdedikasi yang bekerja sama untuk mengembangkan solusi energi terbarukan dari sampah organik.
         </p>

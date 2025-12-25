@@ -15,7 +15,7 @@ export default function Page() {
         <Hero />
         <IntroSection />
         {/* Grouping dark sections together */}
-        <div className="bg-linear-to-br from-blue-950 to-green-mibi text-white rounded-2xl md:rounded-3xl mx-2 md:mx-4 lg:mx-8 overflow-hidden">
+        <div className="bg-linear-to-br bg-blue-950 text-white">
           <FeaturesSection />
         </div>
         <ArticlesSection />

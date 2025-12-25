@@ -33,18 +33,27 @@ export function ArticlesSection() {
       image: prestasiImage,
       url:"https://bisnis.espos.id/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-di-panggung-2157163"
     },
+    {
+      title: "7 Tim Mahasiswa ITERA Lolos Pendanaan PKM 2021 ",
+      category: "Institut Teknologi Sumatera",
+      image: prestasiImage,
+      url:"https://www.itera.ac.id/7-tim-mahasiswa-itera-lolos-pendanaan-pkm-2021/"
+    },
+    {
+      title: "Usulkan Aneka Inovasi Teknologi, 11 Tim Mahasiswa Itera Lolos PKM ",
+      category: "Institut Teknologi Sumatera",
+      image: prestasiImage,
+      url:"https://www.itera.ac.id/usulkan-aneka-inovasi-teknologi-11-tim-mahasiswa-itera-lolos-pkm/"
+    },
   ]
 
   return (
-    <section className="px-4 pb-12 md:px-8 md:pb-16 lg:px-16 xl:px-20" id="kerjasama">
+    <section className="px-4 pb-12 md:px-8 md:pb-16 container mx-auto" id="kerjasama">
       <div 
         className="mb-8 md:mb-10 flex flex-col items-start justify-between gap-4 md:gap-6 md:flex-row md:items-end"
         data-aos="fade-up"
       >
         <div className="space-y-2">
-          <span className="text-xs md:text-sm font-medium text-blue-mibi uppercase tracking-wide">
-            Artikel Mibi Tech
-          </span>
           <h2 className="text-2xl md:text-3xl font-bold text-black-mibi lg:text-4xl">Lihat Prestasi Kami</h2>
           <p className="max-w-2xl text-sm md:text-base text-black-mibi/60">
             Sistem terintegrasi yang mengolah sampah organik menjadi energi terbarukan melalui proses pemisahan, fermentasi, pembakaran, dan waste-to-product sehingga setiap bagian sampah dapat dimanfaatkan secara maksimal.

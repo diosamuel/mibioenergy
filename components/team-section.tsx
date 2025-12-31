@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import febiolaImage from "@/assets/person/febi.jpg"
 import chelinaImage from "@/assets/person/cheline.jpg"
-// import nataniaImage from "@/assets/person/natania.jpeg"
+import nataniaImage from "@/assets/person/natania.jpg"
 import anandaImage from "@/assets/person/nanda.jpg"
 import virdioImage from "@/assets/person/virdio.jpg"
 import ibnuImage from "@/assets/person/ibnu.jpg"
@@ -32,7 +32,7 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: "Natania",
     role: "Creative Designer",
-    image: anandaImage,
+    image: nataniaImage,
   },
   {
     id: 4,

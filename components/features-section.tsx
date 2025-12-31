@@ -157,7 +157,7 @@ export function FeaturesSection() {
                   <div
                     className={`absolute -left-10 top-1 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${activeItem >= item.id
                         ? "bg-emerald-400 border-emerald-400 shadow-lg shadow-emerald-400/50"
-                        : "bg-transparent border-white/40"
+                        : "bg-transparent"
                       }`}
                   >
                     <div className={`w-2 h-2 rounded-full transition-colors ${activeItem >= item.id ? "bg-white" : "bg-white/40"
@@ -166,11 +166,12 @@ export function FeaturesSection() {
 
                   {/* Content Card */}
                   <div className={`p-4 md:p-5 rounded-xl transition-all duration-300 ${activeItem === item.id
-                      ? "bg-white/10 backdrop-blur-sm border"
-                      : "bg-white/5"
+                      ? "bg-white/10 backdrop-blur-sm"
+                      : "bg-white/2"
                     }`}>
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-base md:text-lg font-semibold text-white">
+                      <h3 className={`text-base md:text-lg font-semibold ${activeItem === item.id ? "text-white" : "text-white/20"
+                      }`}>
                         {item.title}
                       </h3>
                     </div>

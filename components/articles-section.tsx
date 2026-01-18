@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, ArrowRight, Link } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import alatImage from "@/assets/alat.jpg"
 import rancangImage from "@/assets/rancang.jpg"
 import labImage1 from "@/assets/IMG_20240626_181331.jpg"
@@ -88,16 +89,17 @@ export function ArticlesSection() {
       </div>
 
       <div 
-        className="mt-6 md:mt-8 flex justify-center gap-3 md:gap-4"
+        className="mt-6 md:mt-8 flex justify-center"
         data-aos="fade-up"
         data-aos-delay="400"
       >
-        <button className="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full border border-white/20 bg-transparent text-white hover:bg-white/10 transition-colors">
-          <ArrowLeft className="h-4 w-4 md:h-5 md:w-5" />
-        </button>
-        <button className="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full border border-white/20 bg-transparent text-white hover:bg-white/10 transition-colors">
-          <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
-        </button>
+        <Link 
+          href="/articles"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-mibi text-white font-medium rounded-full hover:bg-blue-mibi/90 transition-colors"
+        >
+          Lihat Semua Artikel
+          <ArrowRight className="h-4 w-4" />
+        </Link>
       </div>
     </section>
   )

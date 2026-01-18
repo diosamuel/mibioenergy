@@ -54,7 +54,7 @@ export function TopNav() {
           <div className={`hidden items-center gap-8 md:flex text-sm font-medium transition-colors duration-300 ${
             isScrolled ? 'text-slate-600' : 'text-white/80'
           }`}>
-            <Link href="#" className={`hover:text-blue-mibi transition-colors ${
+            <Link href="/" className={`hover:text-blue-mibi transition-colors ${
               isScrolled ? 'text-slate-900' : 'text-white'
             }`}>
               Beranda
@@ -65,7 +65,7 @@ export function TopNav() {
             <Link href="#" className="hover:text-blue-mibi transition-colors">
               Kerja Sama
             </Link>
-            <Link href="#" className="hover:text-blue-mibi transition-colors">
+            <Link href="/articles" className="hover:text-blue-mibi transition-colors">
               Artikel
             </Link>
           </div>

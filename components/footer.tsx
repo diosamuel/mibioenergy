@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
 
 export function Footer() {
@@ -9,6 +10,13 @@ export function Footer() {
           {/* Brand & Address */}
           <div className="max-w-sm space-y-4 md:space-y-6" data-aos="fade-up">
             <div className="flex items-center gap-2">
+              <Image
+                src="/assets/logo_hd.png"
+                alt="Mibi-Tech Logo"
+                width={40}
+                height={40}
+                className="h-8 w-8 md:h-10 md:w-10 object-contain"
+              />
               <span className="text-lg md:text-xl font-bold">Mibi-Tech</span>
             </div>
 
@@ -63,7 +71,7 @@ export function Footer() {
             </Link>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 lg:gap-6">
+          {/* <div className="flex flex-wrap justify-center gap-3 md:gap-4 lg:gap-6">
             <Link href="#" className="hover:text-white whitespace-nowrap">
               Syarat & Ketentuan
             </Link>
@@ -76,7 +84,7 @@ export function Footer() {
             <Link href="#" className="hover:text-white whitespace-nowrap">
               Penafian
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -8,7 +8,7 @@ export function IntroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <section className="container mx-auto px-4 py-8 md:py-12">
+    <section className="container mx-auto px-4 py-8 md:py-12 overflow-hidden">
       <div className="grid gap-8 md:gap-12 md:grid-cols-2 md:items-center lg:gap-24">
         {/* Text Content */}
         <div className="space-y-4 md:space-y-6" data-aos="fade-right">
@@ -43,7 +43,7 @@ export function IntroSection() {
         {/* Image Side */}
         <div className="relative mx-auto w-full max-w-sm md:max-w-none" data-aos="fade-left" data-aos-delay="200">
           {/* Abstract Green Shape Background */}
-          <div className="absolute -right-[10em] -top-[8em]">
+          <div className="absolute -right-[10em] -top-[8em] hidden md:block">
             <Image src="/assets/logo_hd.png" alt="Abstract Green Shape" width={550} height={100} />
           </div>
 

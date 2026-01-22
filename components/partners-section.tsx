@@ -25,20 +25,20 @@ export function PartnersSection() {
 
         {/* Right Side - Grid */}
         <div className="lg:col-span-8">
-          <div className="grid grid-cols-2 gap-3 md:gap-4 lg:gap-6 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:gap-6 lg:gap-8 sm:grid-cols-3">
             {partners.map((partner, i) => (
               <div
                 key={i}
-                className="flex items-center justify-center rounded-lg md:rounded-xl border border-slate-100 bg-white p-3 md:p-4 shadow-sm hover:shadow-md transition-shadow min-h-[80px] md:min-h-[100px]"
+                className="flex items-center justify-center rounded-xl md:rounded-2xl border border-slate-100 bg-white p-5 md:p-6 lg:p-8 shadow-sm hover:shadow-lg transition-shadow min-h-[120px] md:min-h-[160px] lg:min-h-[180px]"
                 data-aos="fade-up"
                 data-aos-delay={i * 50}
               >
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  width={200}
-                  height={60}
-                  className="h-8 md:h-12 w-auto object-contain opacity-80 hover:opacity-100"
+                  width={280}
+                  height={100}
+                  className="h-16 md:h-20 lg:h-24 w-auto object-contain opacity-80 hover:opacity-100"
                 />
               </div>
             ))}

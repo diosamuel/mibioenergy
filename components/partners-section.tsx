@@ -4,11 +4,13 @@ import logoImage from "@/assets/logo.png"
 import pertaminaImage from "@/assets/pertamina.png"
 import pertamudaImage from "@/assets/pertamuda.png"
 import pkmImage from "@/assets/pkm.png"
+import btnHPImage from "@/assets/btnhp_2025.png"
 export function PartnersSection() {
   const partners = [
     { name: "Pertamina", logo: pertaminaImage },
     { name: "Pertamuda", logo: pertamudaImage },
     { name: "PKM", logo: pkmImage },
+    { name: "BTN", logo: btnHPImage },
   ]
 
   return (

@@ -8,6 +8,7 @@ import anandaImage from "@/assets/person/nanda.jpg"
 import virdioImage from "@/assets/person/virdio.jpg"
 import ibnuImage from "@/assets/person/ibnu.jpg"
 import kharaviImage from "@/assets/person/arthur.jpg"
+import baktiImage from "@/assets/person/bakti.jpg"
 interface TeamMember {
   id: number
   name: string
@@ -23,16 +24,23 @@ const teamMembers: TeamMember[] = [
     image: febiolaImage,
   },
   {
+    id: 7,
+    name: "Kharavi Arthur Lukmana",
+    role: "Operations Lead",
+    image: kharaviImage,
+  },  
+  {
     id: 2,
     name: "Chelina Diah Palupy",
     role: "Marketing Lead",
     image: chelinaImage,
   },
+
   {
-    id: 3,
-    name: "Natania",
-    role: "Creative Designer",
-    image: nataniaImage,
+    id: 8,
+    name: "Bakti Darmawan",
+    role: "Technology Lead",
+    image: baktiImage,
   },
   {
     id: 4,
@@ -41,28 +49,23 @@ const teamMembers: TeamMember[] = [
     image: anandaImage,
   },
   {
-    id: 5,
-    name: "Virdio Saragih",
-    role: "Web Developer",
-    image: virdioImage,
-  },
-  {
     id: 6,
     name: "Ibnu Hanif Qodlisyah",
     role: "Finance Officer",
     image: ibnuImage,
   },
+
   {
-    id: 7,
-    name: "Kharavi Arthur Lukmana",
-    role: "Operations Lead",
-    image: kharaviImage,
+    id: 3,
+    name: "Natania",
+    role: "Creative Designer",
+    image: nataniaImage,
   },
   {
-    id: 8,
-    name: "Bakti Darmawan",
-    role: "Technology Lead",
-    image: ibnuImage,
+    id: 5,
+    name: "Virdio Saragih",
+    role: "Web Developer",
+    image: virdioImage,
   },
 ]
 

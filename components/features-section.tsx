@@ -123,7 +123,7 @@ export function FeaturesSection() {
           {/* Header */}
           <div className="space-y-3 md:space-y-4" data-aos="fade-right">
             <h2 className="text-2xl md:text-3xl font-bold text-white lg:text-4xl">
-              Lebih dekat dengan MiBi-Tech
+              Lebih dekat dengan MiBi-Tech <span className="animate-wave">👋🏻</span>
             </h2>
             <p className="text-sm md:text-base text-blue-100/80">
               Dalam prosesnya MiBi-Tech dapat menghasilkan 2 output (produk) utama dan sistem terintegrasi yang mengolah seluruh komponen sampah organik menjadi energi terbarukan.

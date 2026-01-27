@@ -6,45 +6,54 @@ import alatImage from "@/assets/alat.jpg"
 import rancangImage from "@/assets/rancang.jpg"
 import labImage1 from "@/assets/IMG_20240626_181331.jpg"
 import labImage2 from "@/assets/IMG_20240717_173102.jpg"
-import prestasiImage from "@/assets/prestasi/pertamuda-1761874282045_169.jpeg"
-import ceritamedan from "@/assets/prestasi/ceritamedan.jpeg"
+import pertamudaImage from "@/assets/prestasi/pertamuda-1761874282045_169.jpeg"
+import ceritamedanImage from "@/assets/prestasi/ceritamedan.jpeg"
+import pkmIteraImage from "@/assets/prestasi/PKM-Itera-3-1024x683-1.jpg"
+import btnHousingpreneurImage from "@/assets/prestasi/btnhousingpreneur.jpg"
+
 export function ArticlesSection() {
   const articles = [
     {
+      title: "MiBi-Tech Lolos ke Tahap Grand Judging BTN Housingpreneur 2025 Bersama 60 Peserta Terpilih",
+      category: "BTN Housingpreneur",
+      image: btnHousingpreneurImage,
+      url: "https://www.instagram.com/p/DTfSdrVibjs/?img_index=5"
+    },
+    {
       title: "TOP! 12 Startup Jebolan Pertamuda Langsung Teken MoU dengan Investor",
       category: "CNBC Indonesia",
-      image: prestasiImage,
+      image: pertamudaImage,
       url: "https://www.cnbcindonesia.com/entrepreneur/20251031082400-25-680937/top-12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor"
     },
     {
       title: "Febiola Silitonga Mahasiswa ITERA Medan Bawa Inovasi Olah Sampah Jadi Energi Terbarukan di Top 40 Pertamuda 2025",
       category: "Cerita Medan",
-      image: ceritamedan,
+      image: ceritamedanImage,
       url: "https://www.ceritamedan.com/febiola-silitonga-mahasiswa-itera-medan-bawa-inovasi-olah-sampah-jadi-energi-terbarukan-di-top-40-pertamuda-2025"
     },
     {
       title: "12 Startup Jebolan Pertamuda Langsung Teken MoU Dengan Investor",
       category: "Tempo",
-      image: prestasiImage,
-      url:"https://www.tempo.co/info-tempo/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-2085019"
+      image: pertamudaImage,
+      url: "https://www.tempo.co/info-tempo/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-2085019"
     },
     {
-      title: "12 Startup Jebolan Pertamuda Langsung Teken MoU dengan Investor di Panggung ",
+      title: "12 Startup Jebolan Pertamuda Langsung Teken MoU dengan Investor di Panggung",
       category: "ESPOS",
-      image: prestasiImage,
-      url:"https://bisnis.espos.id/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-di-panggung-2157163"
+      image: pertamudaImage,
+      url: "https://bisnis.espos.id/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-di-panggung-2157163"
     },
     {
-      title: "7 Tim Mahasiswa ITERA Lolos Pendanaan PKM 2021 ",
+      title: "7 Tim Mahasiswa ITERA Lolos Pendanaan PKM 2021",
       category: "Institut Teknologi Sumatera",
-      image: prestasiImage,
-      url:"https://www.itera.ac.id/7-tim-mahasiswa-itera-lolos-pendanaan-pkm-2021/"
+      image: pkmIteraImage,
+      url: "https://www.itera.ac.id/7-tim-mahasiswa-itera-lolos-pendanaan-pkm-2021/"
     },
     {
-      title: "Usulkan Aneka Inovasi Teknologi, 11 Tim Mahasiswa Itera Lolos PKM ",
+      title: "Usulkan Aneka Inovasi Teknologi, 11 Tim Mahasiswa Itera Lolos PKM",
       category: "Institut Teknologi Sumatera",
-      image: prestasiImage,
-      url:"https://www.itera.ac.id/usulkan-aneka-inovasi-teknologi-11-tim-mahasiswa-itera-lolos-pkm/"
+      image: pkmIteraImage,
+      url: "https://www.itera.ac.id/usulkan-aneka-inovasi-teknologi-11-tim-mahasiswa-itera-lolos-pkm/"
     },
   ]
 
@@ -57,7 +66,7 @@ export function ArticlesSection() {
         <div className="space-y-2">
           <h2 className="text-2xl md:text-3xl font-bold text-black-mibi lg:text-4xl">Lihat Prestasi Kami</h2>
           <p className="max-w-2xl text-sm md:text-base text-black-mibi/60">
-            Sistem terintegrasi yang mengolah sampah organik menjadi energi terbarukan melalui proses pemisahan, fermentasi, pembakaran, dan waste-to-product sehingga setiap bagian sampah dapat dimanfaatkan secara maksimal.
+            Perjalanan kami dimulai dari PKM, Pertamina Muda, hingga BTN Housingpreneur. Setiap langkah adalah bukti dedikasi kami dalam mengembangkan solusi energi terbarukan yang berkelanjutan.
           </p>
         </div>
       </div>

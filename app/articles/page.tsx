@@ -3,16 +3,27 @@ import { Footer } from "@/components/footer"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import prestasiImage from "@/assets/prestasi/pertamuda-1761874282045_169.jpeg"
-import ceritamedan from "@/assets/prestasi/ceritamedan.jpeg"
+import pertamudaImage from "@/assets/prestasi/pertamuda-1761874282045_169.jpeg"
+import ceritamedanImage from "@/assets/prestasi/ceritamedan.jpeg"
+import pkmIteraImage from "@/assets/prestasi/PKM-Itera-3-1024x683-1.jpg"
+import btnHousingpreneurImage from "@/assets/prestasi/btnhousingpreneur.jpg"
 import headerImage from "@/assets/header.png"
 
 const articles = [
   {
+    title: "MiBi-Tech Lolos ke Tahap Grand Judging BTN Housingpreneur 2025 Bersama 60 Peserta Terpilih",
+    category: "BTN Housingpreneur",
+    description: "MiBi-Tech berhasil lolos ke tahap Grand Judging BTN Housingpreneur 2025 yang akan diselenggarakan pada 26 Januari 2026. Bersama 60 peserta terpilih lainnya, MiBi-Tech siap bersaing membawa inovasi energi terbarukan.",
+    image: btnHousingpreneurImage,
+    url: "https://www.instagram.com/p/DTfSdrVibjs/?img_index=5",
+    date: "22 Januari 2026",
+    featured: true
+  },
+  {
     title: "TOP! 12 Startup Jebolan Pertamuda Langsung Teken MoU dengan Investor",
     category: "CNBC Indonesia",
     description: "Dua belas startup jebolan program Pertamuda berhasil menandatangani MoU dengan investor dalam acara demo day yang berlangsung meriah.",
-    image: prestasiImage,
+    image: pertamudaImage,
     url: "https://www.cnbcindonesia.com/entrepreneur/20251031082400-25-680937/top-12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor",
     date: "31 Oktober 2025",
     featured: true
@@ -21,7 +32,7 @@ const articles = [
     title: "Febiola Silitonga Mahasiswa ITERA Medan Bawa Inovasi Olah Sampah Jadi Energi Terbarukan di Top 40 Pertamuda 2025",
     category: "Cerita Medan",
     description: "Mahasiswa ITERA asal Medan berhasil membawa inovasi pengolahan sampah menjadi energi terbarukan hingga masuk Top 40 Pertamuda 2025.",
-    image: ceritamedan,
+    image: ceritamedanImage,
     url: "https://www.ceritamedan.com/febiola-silitonga-mahasiswa-itera-medan-bawa-inovasi-olah-sampah-jadi-energi-terbarukan-di-top-40-pertamuda-2025",
     date: "28 Oktober 2025",
     featured: true
@@ -30,7 +41,7 @@ const articles = [
     title: "12 Startup Jebolan Pertamuda Langsung Teken MoU Dengan Investor",
     category: "Tempo",
     description: "Program inkubasi Pertamuda berhasil mencetak 12 startup yang langsung mendapatkan pendanaan dari investor.",
-    image: prestasiImage,
+    image: pertamudaImage,
     url: "https://www.tempo.co/info-tempo/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-2085019",
     date: "30 Oktober 2025",
     featured: false
@@ -39,7 +50,7 @@ const articles = [
     title: "12 Startup Jebolan Pertamuda Langsung Teken MoU dengan Investor di Panggung",
     category: "ESPOS",
     description: "Acara demo day Pertamuda berlangsung sukses dengan penandatanganan MoU antara 12 startup dengan para investor.",
-    image: prestasiImage,
+    image: pertamudaImage,
     url: "https://bisnis.espos.id/12-startup-jebolan-pertamuda-langsung-teken-mou-dengan-investor-di-panggung-2157163",
     date: "30 Oktober 2025",
     featured: false
@@ -48,7 +59,7 @@ const articles = [
     title: "7 Tim Mahasiswa ITERA Lolos Pendanaan PKM 2021",
     category: "Institut Teknologi Sumatera",
     description: "Tujuh tim mahasiswa ITERA berhasil lolos seleksi pendanaan Program Kreativitas Mahasiswa (PKM) tahun 2021.",
-    image: prestasiImage,
+    image: pkmIteraImage,
     url: "https://www.itera.ac.id/7-tim-mahasiswa-itera-lolos-pendanaan-pkm-2021/",
     date: "15 Mei 2021",
     featured: false
@@ -57,7 +68,7 @@ const articles = [
     title: "Usulkan Aneka Inovasi Teknologi, 11 Tim Mahasiswa Itera Lolos PKM",
     category: "Institut Teknologi Sumatera",
     description: "Sebelas tim mahasiswa ITERA lolos PKM dengan berbagai usulan inovasi teknologi yang menjanjikan.",
-    image: prestasiImage,
+    image: pkmIteraImage,
     url: "https://www.itera.ac.id/usulkan-aneka-inovasi-teknologi-11-tim-mahasiswa-itera-lolos-pkm/",
     date: "20 April 2021",
     featured: false

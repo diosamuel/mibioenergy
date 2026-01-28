@@ -58,14 +58,13 @@ const advantages = [
 
 export function FeaturesSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
-  const videoRef = useRef<HTMLVideoElement>(null)
   const [activeItem, setActiveItem] = useState<number>(1)
   const [scrollProgress, setScrollProgress] = useState(0)
   const itemRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!sectionRef.current || !videoRef.current) return
+      if (!sectionRef.current) return
 
       const section = sectionRef.current
       const sectionRect = section.getBoundingClientRect()
@@ -97,12 +96,6 @@ export function FeaturesSection() {
       }
 
       setActiveItem(timelineItems[currentItemIndex]?.id || 1)
-
-      // Calculate video time based on active item (each item = 3 seconds)
-      const targetTime = currentItemIndex * 3
-      if (Math.abs(videoRef.current.currentTime - targetTime) > 0.3) {
-        videoRef.current.currentTime = targetTime
-      }
     }
 
     window.addEventListener("scroll", handleScroll, { passive: true })
@@ -206,12 +199,12 @@ export function FeaturesSection() {
         >
           {/* Video Element */}
           <video
-            ref={videoRef}
-            src="/assets/video.mp4"
+            src="/assets/video2.mp4"
             className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
             muted
             playsInline
-            preload="auto"
           />
 
           {/* Video Overlay */}

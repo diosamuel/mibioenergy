@@ -10,9 +10,15 @@ import pertamudaImage from "@/assets/prestasi/pertamuda-1761874282045_169.jpeg"
 import ceritamedanImage from "@/assets/prestasi/ceritamedan.jpeg"
 import pkmIteraImage from "@/assets/prestasi/PKM-Itera-3-1024x683-1.jpg"
 import btnHousingpreneurImage from "@/assets/prestasi/btnhousingpreneur.jpg"
-
+import winnerBtnHousingPreneur from "@/assets/prestasi/winnerbtnhousepreneur.jpeg"
 export function ArticlesSection() {
   const articles = [
+    {
+      title:"Selamat! Mibi-Tech Juara 3 BTN Housingpreneur kategori Housing Related Innovation",
+      category:"BTN Housingpreneur",
+      image:winnerBtnHousingPreneur,
+      url: "https://www.cnbcindonesia.com/news/20260131195529-4-707003/btn-housingpreneur-2025-lahirkan-inovator-muda-ekosistem-perumahan"
+    },
     {
       title: "MiBi-Tech Lolos ke Tahap Grand Judging BTN Housingpreneur 2025 Bersama 60 Peserta Terpilih",
       category: "BTN Housingpreneur",

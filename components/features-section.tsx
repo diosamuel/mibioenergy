@@ -195,7 +195,6 @@ export function FeaturesSection() {
         {/* Right Side: Sticky Video */}
         <div
           className="lg:flex-[1_1_50%] sticky top-28 h-[300px] md:h-[400px] lg:h-[calc(100vh-8rem)] overflow-hidden rounded-2xl bg-black/30 backdrop-blur-sm border border-white/10"
-          data-aos="fade-left"
         >
           {/* Video Element */}
           <video

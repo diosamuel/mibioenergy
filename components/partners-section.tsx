@@ -15,7 +15,7 @@ export function PartnersSection() {
 
   return (
     <section className="container mx-auto px-4 pt-8 pb-12 md:pt-10 md:pb-16 lg:pb-20">
-      <div className="grid gap-8 md:gap-12 lg:grid-cols-12">
+      <div className="grid gap-8 md:gap-12 lg:grid-cols-12 lg:mx-20">
         {/* Left Side */}
         <div className="lg:col-span-4 space-y-4 md:space-y-6" data-aos="fade-right">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Acknowledged by</h2>

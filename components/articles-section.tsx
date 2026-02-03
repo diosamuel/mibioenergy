@@ -69,7 +69,7 @@ export function ArticlesSection() {
         className="mb-8 md:mb-10 flex flex-col items-start justify-between gap-4 md:gap-6 md:flex-row md:items-end"
         data-aos="fade-up"
       >
-        <div className="space-y-2">
+        <div className="space-y-2 lg:mx-20">
           <h2 className="text-2xl md:text-3xl font-bold text-black-mibi lg:text-4xl">Lihat Prestasi Kami</h2>
           <p className="max-w-2xl text-sm md:text-base text-black-mibi/60">
             Perjalanan kami dimulai dari PKM, Pertamina Muda, hingga BTN Housingpreneur. Setiap langkah adalah bukti dedikasi kami dalam mengembangkan solusi energi terbarukan yang berkelanjutan.
@@ -77,7 +77,7 @@ export function ArticlesSection() {
         </div>
       </div>
 
-      <div className="grid gap-3 md:gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-3 md:gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:mx-20">
         {articles.map((article, i) => (
           <a href={article.url} target="_blank" key={i}>
           <div 

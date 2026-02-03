@@ -109,7 +109,7 @@ export function FeaturesSection() {
       ref={sectionRef}
       className="relative container mx-auto px-4 py-8 md:py-16"
     >
-      <div className="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-12">
+      <div className="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-12 lg:mx-20">
 
         {/* Left Side: Freely Scrolling Timeline Content */}
         <div className="flex-1 lg:flex-[1_1_50%] space-y-6 md:space-y-8">
@@ -218,7 +218,8 @@ export function FeaturesSection() {
             <div className="mt-3 flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-sm md:text-base font-medium text-white">
-                {timelineItems[activeItem - 1]?.title}
+                {/* {timelineItems[activeItem - 1]?.title} */}
+                Alat Mibio-Tech
               </span>
             </div>
           </div>

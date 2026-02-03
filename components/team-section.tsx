@@ -73,7 +73,7 @@ export function TeamSection() {
   return (
     <section className="container mx-auto px-4">
       <div 
-        className="mb-8 md:mb-12 flex flex-col gap-4 md:gap-6 md:flex-row md:items-end md:justify-between"
+        className="mb-8 md:mb-12 flex flex-col gap-4 md:gap-6 md:flex-row md:items-end md:justify-between lg:mx-20"
         data-aos="fade-up"
       >
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 lg:text-4xl relative inline-block">
@@ -102,7 +102,7 @@ export function TeamSection() {
         </p>
       </div>
 
-      <div className="grid gap-4 md:gap-6 grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:gap-6 grid-cols-2 lg:grid-cols-4 lg:mx-20">
         {teamMembers.map((member, index) => (
           <div 
             key={member.id} 

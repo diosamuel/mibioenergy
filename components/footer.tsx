@@ -54,8 +54,6 @@ export function Footer() {
 
         <div 
           className="mt-8 md:mt-12 flex flex-col items-center justify-between gap-4 md:gap-6 border-t border-white/10 pt-6 md:pt-8 text-[10px] md:text-xs text-blue-100/60 md:flex-row"
-          data-aos="fade-up"
-          data-aos-delay="200"
         >
           <p className="text-center md:text-left">© 2025 MiBio Energy Tech.</p>
 

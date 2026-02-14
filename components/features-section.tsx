@@ -218,7 +218,7 @@ export function FeaturesSection() {
               <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-sm md:text-base font-medium text-white">
                 {/* {timelineItems[activeItem - 1]?.title} */}
-                Alat Mibio-Tech
+                Prototype Alat MiBi-Tech
               </span>
             </div>
           </div>

@@ -47,7 +47,7 @@ export function TopNav() {
             </div>
             <span className={`font-bold hidden sm:inline-block transition-colors duration-300 ${
               isScrolled ? 'text-slate-900' : 'text-white'
-            }`}>Mibi-Tech</span>
+            }`}>MiBi-Tech</span>
           </Link>
 
           {/* Desktop Links */}
@@ -113,7 +113,7 @@ export function TopNav() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg">
                 <img src={logo.src} alt="MibiTech" className="w-10" />
               </div>
-              <span className="font-bold text-slate-900">Mibi-Tech</span>
+              <span className="font-bold text-slate-900">MiBi-Tech</span>
             </div>
             <button
               onClick={() => setIsMenuOpen(false)}

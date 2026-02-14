@@ -164,12 +164,12 @@ export function TopNav() {
                 <span className="flex items-center gap-2"><Instagram className="h-4 w-4" /> @mibioenergy_tech</span>
               </a>
             </div>
-            <Button
+            <Link
               className="w-full rounded-full bg-blue-mibi text-white hover:bg-blue-mibi/90"
-              onClick={() => setIsMenuOpen(false)}
+              href="https://wa.me/6281213353174"
             >
               Hubungi Kami
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -252,7 +252,7 @@ export default function ArticlesPage() {
               Hubungi kami untuk mengetahui lebih lanjut tentang teknologi pengolahan sampah organik menjadi energi terbarukan.
             </p>
             <Link 
-              href="/#contact"
+              href="https://wa.me/6281213353174"
               className="inline-flex items-center gap-2 bg-white text-blue-mibi font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition-colors"
             >
               Hubungi Kami
